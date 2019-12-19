@@ -1,0 +1,32 @@
+Algoritmo "MEDIA DE NOTAS"
+Var
+
+   nota: vetor[1..4] de real
+   media: Real
+   i: inteiro
+
+
+Inicio
+
+   EscrevaL ("-----------------------")
+   EscrevaL ("ESCOLA FULANO DE TAL")
+   EscrevaL ("-----------------------")
+
+   para i de 1 ate 4 faca
+      escreva ("Digite a nota do" , i ," Bimestre:")
+      leia(nota[i])
+   fimpara
+
+   media <- (nota[1] + nota[2] + nota[3]+nota[4]) / 4
+
+   EscrevaL ("-----------------------")
+   EscrevaL ("MEDIA:", media)
+
+   EscrevaL ("-----------------------")
+   Se ( media >= 8 ) entao
+         EscrevaL ("ALUNO APROVADO")
+      senao
+         EscrevaL ("ALUNO REPROVADO")
+      FimSe
+
+Fimalgoritmo
